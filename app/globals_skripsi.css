@@ -1,0 +1,74 @@
+/* global.css */
+
+/* Reset margin dan padding default */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin-top: 50px; /* Menambahkan ruang untuk navbar */
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000; /* Pastikan navbar berada di atas konten */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Kontainer untuk skripsi */
+.content {
+  margin-top: 80px; /* Memberikan ruang untuk navbar */
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Styling untuk Sticky Heading */
+.sticky-heading {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 50px; /* Mengatur posisi sticky agar di bawah navbar */
+  background-color: #fff;
+  padding: 10px;
+  z-index: 500;
+  border-bottom: 2px solid #ddd;
+}
+
+.sticky-heading h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Styling untuk setiap bab */
+section {
+  margin-bottom: 50px;
+}
